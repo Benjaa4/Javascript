@@ -1,20 +1,35 @@
- let nombreDelAlumno
- nombreDelAlumno = "Alejandro"  /* String */
-console.log (nombreDelAlumno) 
- let nombre2  
- nombre2 =  123 /* number */
- nombre2 = true /* Boolean */
+function login() {
 
-  let Prueba = "Benjamin"
- console.log ("Hola" + " " + Prueba + " ," + nombreDelAlumno)
- let numero = 20
-let numero2 = 2 
- console.log ("Suma " +(numero + numero2))
- console.log ("resta " +(numero - numero2))
- console.log ("multiplicacion " +(numero * numero2))
- console.log ("division " +(numero / numero2))
- console.log ("potencia" +(numero ** numero2)) 
-/* operaciones matematicas */
+    let nombre = prompt("cual es tu nombre")
+    let edad
+    do {
+        edad = prompt("cual es tu edad")
+        if (isNaN(edad)) { alert("ingrese una edad valida") }
+    }
+    while (isNaN(edad))
 
-/* Calculadora */
+    let pais = prompt("Cual es tu nacionalidad")
+    let ciudad = prompt("Cual es tu ciudad de residencia actual?")
+    const login_data = [nombre, parseInt(edad), pais, ciudad]
+    let confirmacion = confirm("esta informacion es correcta?" + "nombre =" + login_data[0] + " " + "edad =" + " " + login_data[1] + " " + "pais =" + login_data[2] + " " + "ciudad=" + login_data[3])
+
+
+    if (confirmacion === true) { alert("bienvenido " + nombre + ", " + pais + ", " + ciudad) }
+    else { login() }
+}
+
+login()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
