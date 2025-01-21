@@ -8,18 +8,15 @@ function producto(id, nombre, precio, porcion) {
     this.porcion = porcion
 
 }
-let producto1 = new producto (1, "azucar", 1200 , "1kg")
 
-const productos = [producto1, 
+const productos = [new producto (1, "azúcar", 1200 , "1kg") , 
 new producto(2, "Coca-Cola", 2000, "2L")
 , new producto (3, "Papas fritas", 3200, "480gr"),
-new producto (4, "Tomate", 1000, "1kg" )
-
-
-
-
-
-]
+new producto (4, "Tomate", 1000, "1kg" ),
+new producto (5, "Lechuga", 800, "1u" ),
+new producto (6, "Papa", 2000, "1kg" ),
+new producto (7, "Tomate", 1000, "1kg" ),
+new producto (8, "Zanahoria", 900, "1kg" ),]
 
 console.log(productos)
 
@@ -32,6 +29,7 @@ function mostrarProductos() {
 } )
     }
 console.log(mostrarProductos())
+
 
 
 

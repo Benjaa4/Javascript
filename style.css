@@ -1,3 +1,5 @@
 body {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-image:url(./img/hex-background-networking.jpg); background-repeat: repeat; background-size: cover;}
 h1 {justify-content: center;text-align: center;}
 p {display: flex;font-size: 18px;justify-content: center;align-items: center;}
+header {margin-bottom: 5rem;}
+.form {display: grid;justify-content: center ;align-items: center;}
