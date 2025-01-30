@@ -3,3 +3,7 @@ h1 {justify-content: center;text-align: center;}
 p {display: flex;font-size: 18px;justify-content: center;align-items: center;}
 header {margin-bottom: 5rem;}
 .form {display: grid;justify-content: center ;align-items: center;}
+.btn {display: grid ;margin-left:1.5rem; background-color: black; color: white; max-inline-size: 40rem;}
+.btn:hover {background-color: white; color: black;}
+img {max-width: 8rem;}
+

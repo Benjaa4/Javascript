@@ -6,7 +6,17 @@
   const email = d.getElementById('email').value
   const contraseña = d.getElementById('password').value
   const confirmarContraseña = d.getElementById('cfmpassword').value
-  if (contraseña != confirmarContraseña) {alert("las contraseñas no coinciden")}
+  if (contraseña !== confirmarContraseña) {alert("las contraseñas no coinciden")}
   else {
   alert(nombre +" \n" + email + "\n " + contraseña + " \n ")
   }}
+
+
+
+
+
+
+
+
+
+
