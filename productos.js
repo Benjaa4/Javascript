@@ -56,14 +56,26 @@ function actualizarCarrito() {
     const li = d.createElement("li")
     li.innerHTML = `${producto.nombre} - ${producto.precio} - ${producto.porcion}`
     carritoLista.appendChild(li)
+    borrar_carrito()
   })
-
-
-
-
 }
 
+ function borrar_carrito() {const borrar = d.createElement('button')
+  borrar.innerHTML = "borrar"
+  const carritoLista = d.getElementById("carrito")
+  carritoLista.appendchild(borrar)}
+
       mostrarProductos()
+
+
+
+
+
+
+
+
+
+
 
 
 

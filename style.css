@@ -1,9 +1,115 @@
-body {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-image:url(./img/hex-background-networking.jpg); background-repeat: repeat; background-size: cover;}
-h1 {justify-content: center;text-align: center;}
-p {display: flex;font-size: 18px;justify-content: center;align-items: center;}
-header {margin-bottom: 5rem;}
-.form {display: grid;justify-content: center ;align-items: center;}
-.btn {display: grid ;margin-left:1.5rem; background-color: black; color: white; max-inline-size: 40rem;}
-.btn:hover {background-color: white; color: black;}
-img {max-width: 8rem;}
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+    font-family: "Prompt";
+    /* background-image:url(./img/hex-background-networking.jpg); background-repeat: repeat; background-size: cover */
+    background-color: lightcoral;
+    background: linear-gradient(to right, lightcoral, #F7395C, #F61A42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+header {
+    margin-bottom: 10rem;
+}
+
+/* login page */
+.container {
+    background-color: white;
+    margin: 5rem;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.265);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container a:hover {
+    color: lightcoral;
+}
+
+.container button {
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: rgb(247, 99, 99);
+}
+
+
+.container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container {
+
+    top: 0;
+    height: 100%;
+}
+
+
+/* Javascript styles */
+.form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: grid;
+    margin-left: 1.5rem;
+    background-color: black;
+    color: white;
+    max-inline-size: 40rem;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+img {
+    max-width: 8rem;
+}
