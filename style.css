@@ -5,11 +5,13 @@ body {
     /* background-image:url(./img/hex-background-networking.jpg); background-repeat: repeat; background-size: cover */
     background-color: lightcoral;
     background: linear-gradient(to right, lightcoral, #F7395C, #F61A42);
+ background-repeat: repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%; 
     
 }
 
@@ -17,7 +19,43 @@ header {
     margin-bottom: 10rem;
 }
 
-/* login page */
+/* pagina de login */
+
+#logout {
+    background-color: lightcoral;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    outline: none;
+    border-color: transparent;
+}
+
+#logout:hover {
+    background-color:transparent;
+    color: black;
+    border-color: #000000;
+    border-width: 1.75px;
+}
+
+
+/* login styles */
+.infocnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.265);
+    position: relative;
+    overflow: hidden;
+    max-width: 1366px;
+}
+.infocnt h3 {
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
 .container {
     background-color: white;
     margin: 5rem;
@@ -83,33 +121,188 @@ header {
     outline: none;
 }
 
+.container input:focus {
+    border: 2px solid rgb(0, 0, 0);
+}
+
 .form-container {
 
     top: 0;
     height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        margin-top: 10rem;
+    }
 
-/* Javascript styles */
-.form {
+    .infocnt {
+        flex-direction: column;
+        margin-top: 32rem;
+    }
+    
+}
+
+
+/* productos styles */
+#lista {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem;
+    margin-top: 3rem;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+#carrito {
+    max-width: 100%;
+}
+
+#card {
+    background-color: white;
+     padding: 2rem;
+     border-radius: 25px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.265);
+     margin: 2rem;
+}
+
+#card button {
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#card button:hover {
+    background-color: rgb(247, 99, 99);
+}
+#containerC {
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.btn {
-    display: grid;
-    margin-left: 1.5rem;
-    background-color: black;
-    color: white;
-    max-inline-size: 40rem;
-}
-
-.btn:hover {
+    flex-direction: column;
     background-color: white;
-    color: black;
+    padding: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.265);
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 10rem;
+    
 }
 
-img {
-    max-width: 8rem;
+#openw {
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 34px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#openw:hover {
+    background-color: rgb(247, 99, 99);
+}
+
+.toggle {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+}
+
+.toggle-w {
+    background-color:  #ffd5d5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.265);
+    margin:15% auto;
+    border-color: transparent;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-width: 60%;
+    border-radius: 20px;
+}
+
+
+.close {
+    color: #f7f6f6;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.total-price {
+    background-color: #fff3f3;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.total-price h3 {
+    color: #d33;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.remove-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #ff4757;
+}
+
+.clear-btn {
+    background-color: #ff7675;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px auto;
+    font-size: 16px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.clear-btn:hover {
+    background-color: #ff6b6b;
 }

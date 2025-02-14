@@ -50,3 +50,36 @@ carrito.forEach (producto => {
 
 
 mostrarProductos()
+
+
+
+
+
+
+
+
+function mostrarProductos () {
+  const lista = d.getElementById("lista")
+  
+  productos.forEach(producto => {
+    const div = d.createElement("div")
+    div.classList.add("producto")
+    const li = d.createElement("li")
+    div.appendChild(li)
+    li.innerHTML = `${producto.nombre} - ${producto.precio} - ${producto.porcion}`
+    lista.appendChild(div)
+    const img = d.createElement("img")
+    img.src = `img/${producto.nombre}.jpg`
+    li.appendChild(img)
+    const boton = d.createElement("button")
+    boton.innerHTML = "Agregar"
+    boton.classList.add("btn")
+    div.appendChild(boton)
+  
+    boton.addEventListener("click", () => {
+      agregarCarrito(producto)
+    })
+     
+  })
+  
+}
